@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.login{
+width:340px;
+height:350px;
+background-color:#F0F0EA;
+border-radius:5px;
+
+}
+
+.login .username{
+padding:8px 80px 8px 10px;
+border-radius:3px;
+border:1px solid white;
+
+}
+
+
+.login .password{
+padding:8px 80px 8px 10px;
+border:1px solid white;
+border-radius:3px;
+}
+
+.login .submit{
+padding:15px 30px 15px 30px;
+border-radius:7px;
+background-color:white;
+border:1px solid white;
+}
+
+.login .submit:hover{
+border-radius:7px;
+background-color:#C9D4DC;
+border:1px solid #C9D4DC;
+transition:0.2s ease-in-out;
+color:white;
+}
+
+
+</style>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+</head>
+<body bgcolor="white"><br><br><br><br><br>
+<center>
+<div class="login"><br><br><br><br>
+<form action="./servlet.jsp">
+<input  class="username" type="text" name="username" placeholder="Username">
+</br><br><br><br>
+<input class="password" type="text" name="password" placeholder="Password">
+</br><br><br><br>
+<input type="text" hidden="true" value="login" name="hiddenValue">
+<input  class="submit" type="submit" value="login">
+</form>
+</div></center>
+</body>
+</html>

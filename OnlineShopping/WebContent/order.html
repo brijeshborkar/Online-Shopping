@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.mobile{
+background-color:#F98E7D;
+margin-top:80px;
+padding:8px 110px 8px 10px;
+margin-left:43px;
+
+border:1px solid white;
+font-size:30px;
+border:1px solid black;
+border-radius:5px;
+
+}
+/*.cmobile{
+margin-top:80px;
+margin-left:150px;
+width:400px;
+height:600px;
+background-color:blue;
+}*/
+
+.mobile:hover{
+transition:0.2s ease-in-out;
+color:white;
+background-color:#E5391E;
+border-radius:5px;
+}
+.mquantity{
+margin-left:900px;
+padding:4px 0.2px 4px 0.2px;
+
+}
+
+.cquantity{
+
+padding:4px 0.2px 4px 0.2px;
+
+}
+
+.clothes{
+background-color:#E1F792;
+margin-top:-250px;
+margin-left:550px;
+padding:8px 170px 8px 10px;
+
+border:1px solid white;
+font-size:30px;
+border:1px solid black;
+border-radius:5px;
+}
+/*.cclothes{
+margin-top:-600px;
+margin-left:850px;
+width:400px;
+height:600px;
+background-color:blue;
+}*/
+
+.clothes:hover{
+transition:0.2s ease-in-out;
+color:white;
+background-color:#F3E133;
+border-radius:5px;
+}
+.checkout{
+padding:10px;
+background-color:red;
+border:1px solid red;
+}
+</style>
+<meta charset="ISO-8859-1">
+<title>Shopping Cart</title>
+</head>
+<body>
+
+<form action="./servlet.jsp">
+<div class="cmobile">
+<select class="mobile" name="mobile">
+  <option value="mobile">Mobiles</option>
+  <option value="samsung s8">Samsung s8</option>
+  <option value="oneplus 5">One plus 5</option>
+  <option value="iphone x">Iphone X </option>
+</select>
+</div>
+
+<input  class = "mquantity" type="text" name="mobilequantity" placeholder="quantity">
+
+</br>
+<div class="cclothes">
+<select class="clothes" name="clothes">
+  <option value="cloth">Clothes</option>
+  <option value="pant">Pant</option>
+  <option value="shirt">Shirt</option>
+    <option value="short">Shorts </option>
+</select>
+</div>
+
+<input class = "cquantity"  type="text" name="clothesquantity" placeholder="quantity">
+<input type="text" hidden="true" value="order" name="hiddenValue">
+<input class="checkout" type="submit" value="Checkout">
+
+</form>
+</center>
+</body>
+</html>
